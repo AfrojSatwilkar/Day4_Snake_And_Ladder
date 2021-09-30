@@ -27,8 +27,17 @@ public class GameOperations {
             case 3 -> {
                 //snake
                 START_POSITION -= DICE_NUMBER;
+                if (START_POSITION <= 0){
+                    START_POSITION = 0;
+                }
                 System.out.println("Position :" + START_POSITION);
             }
+        }
+        if (START_POSITION != 100){
+            roll();
+        }
+        else{
+            System.out.println("Player Won");
         }
     }
 }
