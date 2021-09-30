@@ -22,6 +22,9 @@ public class GameOperations {
             case 2 -> {
                 //ladder
                 START_POSITION += DICE_NUMBER;
+                if (START_POSITION > 100){
+                    START_POSITION -= DICE_NUMBER;
+                }
                 System.out.println("Next position :" + START_POSITION);
             }
             case 3 -> {
