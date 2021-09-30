@@ -18,14 +18,14 @@ public class GameOperations {
         switch (Option){
             case 1 ->
                     //no play
-                    System.out.println("No play "+START_POSITION+" Location");
+                    System.out.println("No play "+COUNT+" moves And "+START_POSITION+" Location");
             case 2 -> {
                 //ladder
                 START_POSITION += DICE_NUMBER;
                 if (START_POSITION > 100){
                     START_POSITION -= DICE_NUMBER;
                 }
-                System.out.println("Next position :" + START_POSITION);
+                System.out.println(COUNT+" Moves and "+START_POSITION+" Position ");
             }
             case 3 -> {
                 //snake
@@ -33,14 +33,14 @@ public class GameOperations {
                 if (START_POSITION <= 0){
                     START_POSITION = 0;
                 }
-                System.out.println("Position :" + START_POSITION);
+                System.out.println(COUNT+" Moves and "+START_POSITION+" Position ");
             }
         }
         if (START_POSITION != 100){
             roll();
         }
         else{
-            System.out.println("Player Won");
+            System.out.println("Player Won with "+COUNT+" moves");
         }
     }
 }
