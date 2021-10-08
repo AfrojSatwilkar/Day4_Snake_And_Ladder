@@ -10,6 +10,7 @@ public class Player1Play {
     public void roll() {
         PREVIOUS_POSITION_PLAYER1 = PLAYER1_POSITION;
         DICE_NUMBER = num.nextInt(6) + 1;
+        System.out.println("Got Dice Number :"+DICE_NUMBER);
         COUNT_PLAYER1++;
         option();
     }

@@ -22,5 +22,6 @@ public class SnakeAndLadderGame {
                 P2.roll();
             }
         }
+        System.out.println("Game Over !");
     }
 }

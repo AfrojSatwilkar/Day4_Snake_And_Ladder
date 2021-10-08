@@ -11,6 +11,7 @@ public class Player2Play {
     public void roll() {
         PREVIOUS_POSITION_PLAYER2 = PLAYER2_POSITION;
         DICE_NUMBER = num.nextInt(6) + 1;
+        System.out.println("Got Dice Number :"+DICE_NUMBER);
         COUNT_PLAYER2++;
         option();
     }
